@@ -216,6 +216,20 @@ body{
     /* max-height: 15%; */
     margin-bottom:20px;
     padding: 0px;
+    gap: 15px;
+}
+@media screen and (max-width:800px) {
+    .logo-container{
+        display: inline-flex;
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+        justify-content: center;
+        /* max-height: 15%; */
+        margin-bottom:20px;
+        padding: 0px;
+        gap: 15px;
+    }
+    
 }
 .skills-logo{
     margin: 1%;
