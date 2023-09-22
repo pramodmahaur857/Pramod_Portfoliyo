@@ -1,0 +1,476 @@
+html{
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    background-color: #202020;
+    overflow-x: hidden;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    opacity: 80%;
+    text-decoration: none;
+}
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    right:0%;
+    bottom: 25%;
+}
+.menu > p{
+    position: sticky;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin:0%;
+    padding:15px;
+    width: 150px;
+    min-height: 5vh !important;
+    font-weight: bolder;
+    font-size: 150%;
+    color: whitesmoke;
+    transition: transform .2s;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.menu > p:hover{
+    font-size: 155%;
+    color: red;
+    width: 160px;
+    transform: scaleX(1.15);
+}
+.menu > p:nth-child(1){
+    border-top-left-radius: 10px;
+}
+.menu > p:nth-last-child(1){
+    border-bottom-left-radius: 10px;
+    border-bottom: 0px;
+}
+.data{
+    margin: 0% 2.5% 2.5% 2.5%;
+    padding: 0% 0.5% 1% 0%;
+    box-shadow: 5px 0px 10px 3px rgba(121, 119, 119, 0.5);
+    border-radius: 5px 70px 5px;
+}
+.data > p > a{
+    word-wrap: break-word;
+}
+.image-container{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.image{
+    height: 80%;
+    width:80%;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 10px 8px rgb(44, 44, 44,0.5);
+}
+.container{
+    margin: 0%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+.home{
+    background-image: url("../public/17520.jpg");
+    background-color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.contact-details{
+    font-size: 200%;
+    color: #130202 !important;
+    margin-top: 1% !important;
+}
+.info{
+    justify-content: flex-start;
+    background-color: rgb(113, 114, 114);
+}
+.about{
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+.heading{
+    color:white;
+    background-color: red;
+    font-size:250%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 2.5%;
+    padding: 0.5% 1.5%;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.intro-class{
+    text-align: center;
+    color: white;
+}
+.brief{
+    font-size: 300%;
+    text-align: center;
+}
+.about-data, .contact-data{
+    box-shadow: 5px 0px 10px 3px rgb(44, 44, 44,0.5);
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+.contact-data{
+    margin-bottom: 3.5%;
+}
+.about-data > p, .contact-data > p{
+    color: #040473;
+    font-size: 200%;
+    margin: 1%;
+    overflow-x: visible;
+    word-break: keep-all;
+    font-weight: bolder;
+    font-style: italic;
+    font-family:monospace;
+}
+.contact-heading{
+    font-size: 250%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    padding: 1%;
+    background-color: green;
+    color:wheat;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.project-technology-formatting{
+    color: #0d27ee;
+}
+.project-instructions{
+    color: crimson;
+}
+.project-link{
+    color: green;
+}
+.academics{
+    background-color: white;
+    justify-content: flex-start;
+}
+.academics-specification, .project-name, .company-specification{
+    font-size: 200%;
+    margin: 1% 0% 0% 1%;
+    font-weight: bold;
+}
+.project-name{
+    color:blue;
+}
+.company-specification-name{
+    font-weight: 600;
+}
+.designation-name{
+    color: red;
+    font-weight: 600;
+}
+.company-technology-specification{
+    color: blue ;
+}
+.company-tasks-specification{
+    color: blueviolet ;
+}
+.company-duration{
+    color: lightcoral;
+}
+.academics-description, .project-description, .company-description{
+    margin: 0.5% 0% 0% 6%;
+    color:rgb(37,36,35);
+    font-size: 150%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.project-description{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.skills{
+    background-color: rgb(2, 8, 14);
+    justify-content: flex-start;
+    padding: 0%;
+}
+.logo-container{
+    display: inline-flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    /* max-height: 15%; */
+    margin-bottom:20px;
+    padding: 0px;
+}
+.skills-logo{
+    margin: 1%;
+    /* width: 14%; */
+    max-height: 150px;
+    box-shadow: 3px 0px 5px 3px rgba(150, 146, 146, 0.5);
+}
+.projects{
+    justify-content: flex-start;
+    background-color: white;
+    min-height: 50vh;
+}
+.contact{
+    justify-content: flex-start;
+    background-color: #202020;
+}
+.contact-whatsapp{
+    margin: 8% 0% 0% 15%;
+    font-size: 150%;
+    color: white;
+}
+.contact-whatsapp > p:nth-child(1){
+    font-weight: bolder;
+    font-size: 180%;
+    font-style: italic;
+    margin-bottom: 0%;
+}
+.contact-whatsapp > p:nth-last-child(1){
+    margin-left:50%;
+    margin-top: 5%;
+}
+.mail-logo{
+    height: 35%;
+    width: 12%;
+}
+.mail-form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 2%;
+    margin-right: 1%;
+    flex-wrap: wrap;
+    padding-right: 6%;
+}
+.mail-form > div > label, .mail-form > div> input,  .mail-form > div > textarea{
+    color: white;
+    font-size: 150%;
+    display: block;
+    margin: 2% 10% ;
+}
+.mail-form > div > input, .mail-form > div > textarea{
+    margin: 0% 2% 5% 20%;
+    max-width: 80vh;
+    min-width: 80vh;
+    background-color: rgb(145, 139, 139);
+    border:none;
+    padding: 3%;
+    outline: none;
+}
+.mail-form > div > textarea{
+    width: 100%;
+    resize: none;
+}
+.mail-form > div > button{
+    margin-left:20%;
+    font-size: 150%;
+    display: block;
+    width: 106%;
+    padding: 2%;
+    background-color: green;
+    outline: none;
+    border-radius: 5px;
+}
+.mail-form > div > input:focus{
+    width: 100%;
+    background-color: skyblue;
+}
+.extra-link{
+    margin-top: 3.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0%;
+    height: 10%;
+}
+.extra-link > div{
+    text-align: center;
+}
+.link-logo{
+    height: 30px;
+}
+.logo-button{
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: green; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: blue; 
+}
+::-webkit-scrollbar-track:hover {
+    box-shadow: inset 0 0 5px green; 
+  }
+@media screen and (max-width:700px){
+    .mail-form > div > input, .mail-form > div > textarea{
+        margin: 0% 2% 5% 10%;
+        max-width: 70vh;
+        min-width: 432.56px;
+        font-size: 100%;
+        background-color: rgb(145, 139, 139);
+        border:none;
+        padding: 3%;
+        outline: none;
+    }        
+    .mail-form > div > button{
+        margin: 0% 2% 5% 10%;
+        display: block;
+        width: 106%;
+        padding: 2%;
+        font-size: 100%;
+        background-color: green;
+        outline: none;
+        border-radius: 5px;
+    }
+    .image-container{
+        align-self: flex-end;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:600px){
+    .menu-bar{
+        display: none !important;
+    }
+    .container{
+        min-height: fit-content;
+    }
+    .mail-form > label{
+        font-size: 100%;
+    }
+    .mail-logo{
+        display: block;
+    }
+    .mail-form > div > input, .mail-form > div > textarea{
+        max-width: 60vh;
+        min-width: 372.17px;
+    }
+    .mail-form > div > button{
+        width: 64vh;
+        min-width: 395px;
+    }
+    .about-data > p, .contact-data > p, .about > div{
+        font-size:100%;
+    }
+    .heading{
+        font-size: 150%;
+    }
+    .brief{
+        font-size: 200%;
+    }
+    .intro-class > h2{
+        font-size: 120%;
+    }
+    .contact-whatsapp{
+        font-size: 130% !important;
+    }
+    .contact-whatsapp > p:nth-child(){
+        font-size: 100% !important;
+    }
+    .contact-whatsapp > p:nth-last-child(){
+        font-size: 100% !important;
+        margin-left:0% !important;
+        margin-top: 0% !important;
+    }
+    .academics-specification, .project-name, .company-specification{
+        font-size: 130%;
+    }
+    .academics-description, .project-description, .company-description{
+        font-size: 100%;
+    }
+    .data{
+        box-shadow: 5px 0px 5px 3px rgba(153, 152, 152, 0.5);
+        border-radius: 5px 50px 5px;
+    }
+}
+@media screen and (max-width:500px){
+    .mail-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .mail-form > div > input, .mail-form > div > textarea{
+        max-width: 50vh;
+        min-width: 310.19px;
+    }
+    .mail-form > div > button{
+        width: 53.5vh;
+        min-width: 330px;
+    }
+    .data{
+        border-radius: 5px 30px 5px;
+    }
+}
+@media screen and (max-width:400px){
+    .mail-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .mail-form > div > input, .mail-form > div > textarea{
+        max-width: 40vh;
+        min-width: 252.97px;
+    }
+    .mail-form > div > button{
+        width: 43vh;
+        min-width: 269px;
+    }
+}
+@media screen and (max-width:300px){
+    html{
+        overflow-x: hidden;
+    }
+    .mail-logo{
+        display: block;
+    }
+    .mail-form > div > input, .mail-form > div > textarea{
+        max-width: 30vh;
+        min-width: 191.02px;
+    }
+    .mail-form > div > button{
+        width: 32.2vh;
+        min-width: 207px;
+    }
+    .mail-form{
+        padding-right: 20%;
+    }
+    .contact-whatsapp > p:nth-last-child(1) {
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-height:500px){
+    .menu-bar{
+        display: none !important;
+    }
+}
