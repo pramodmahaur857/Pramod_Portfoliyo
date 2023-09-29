@@ -135,7 +135,7 @@
             {alert("Please fill all boxes.");return;}
         
         }
-        window.open("mailto:choudharyashutosh7070@gmail.com?subject="+subject.value+"&body="+name.value+":"+body.value,"_black");
+        window.open("mailto:pramodmahaur857@gmail.com?subject="+subject.value+"&body="+name.value+":"+body.value,"_black");
     });
     
     window.addEventListener('scroll',onScrollSelect)
